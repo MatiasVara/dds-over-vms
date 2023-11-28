@@ -2,6 +2,9 @@
 BASE_PATH="${HOME}"
 SSH_PUB_KEY=${BASE_PATH}/.ssh/id_rsa.pub
 
+# if error when creating storage, edit /etc/libvirt/qemu.conf
+# and add user and group to root or a different user
+
 virt-builder centosstream-9 \
 	--format qcow2 --size 15G -o centosstream-9.qcow2 \
 	--hostname guest-0 \
