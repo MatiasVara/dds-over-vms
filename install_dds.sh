@@ -2,6 +2,7 @@
 # virt-builder
 systemctl stop firewalld
 systemctl disable firewalld
+cd ~
 git clone https://github.com/eclipse-cyclonedds/cyclonedds.git
 cd cyclonedds
 mkdir build
