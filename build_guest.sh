@@ -8,4 +8,4 @@ virt-builder centosstream-9 \
 	--install "cmake,gcc-c++,make,git,wget" \
 	--ssh-inject=root:file:${SSH_PUB_KEY} \
 	--selinux-relabel --root-password=password:redhat \
-	--firstboot ./install_dds.sh
+	--upload ./install_dds.sh:/root/install_dds.sh
